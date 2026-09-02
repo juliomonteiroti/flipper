@@ -1,0 +1,23 @@
+REM ============================================================
+REM Demo de Conscientizacao - BadUSB Inofensivo
+REM Chord Cyber / Skylearning
+REM Nao coleta, nao envia, nao instala nada.
+REM Apenas abre uma pagina de aviso em tela cheia.
+REM ============================================================
+
+REM Aguarda o Windows reconhecer o Flipper como teclado
+DELAY 3000
+
+REM Abre a caixa Executar
+GUI r
+DELAY 900
+
+REM Digita o endereco da pagina (o Windows abre no navegador padrao)
+STRING https://juliomonteiroti.github.io/flipper/
+ENTER
+
+REM Espera a pagina carregar antes de ir para tela cheia
+DELAY 5000
+
+REM Tela cheia (F11 na maioria dos navegadores)
+F11
